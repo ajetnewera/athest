@@ -44,3 +44,8 @@ gem 'thin'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+gem 'aced_rails'
+
+# DEVISE RAILS FOR USER AUTH
+gem 'devise'
