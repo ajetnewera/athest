@@ -49,3 +49,6 @@ gem 'aced_rails'
 
 # DEVISE RAILS FOR USER AUTH
 gem 'devise'
+
+# Fontawesome icons
+gem "font-awesome-rails"
