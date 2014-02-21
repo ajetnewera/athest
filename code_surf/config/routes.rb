@@ -8,6 +8,12 @@ CodeSurf::Application.routes.draw do
      namespace :admin do
        resources :users
      end
+
+  devise_scope :user do
+    get 'sign_out' => 'devise/sessions#destroy'
+    get 'sign_in' => 'devise/sessions#new'
+    get 'sign_up' => 'devise/registrations#new'
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
