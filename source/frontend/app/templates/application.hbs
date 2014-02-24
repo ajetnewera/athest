@@ -1,0 +1,73 @@
+<nav class="top-bar" data-topbar>
+    <ul class="title-area">
+        <li class="name">
+            <h1><a href="#">CodeSurf</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+
+    <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li class="active"><a href="#">Help</a></li>
+            <li class="has-dropdown">
+                <a href="#">Ravi Teja</a>
+                <ul class="dropdown">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Signout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+
+    </section>
+</nav>
+
+<div class="off-canvas-wrap">
+    <div class="inner-wrap">
+
+            <section class="left-small off-canvas-hide">
+                <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </section>
+
+
+        <aside class="left-off-canvas-menu">
+            <ul class="off-canvas-list">
+                <li><label>Foundation</label></li>
+                <li>{{#linkTo 'index'}}Home{{/linkTo}}</li>
+                <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+
+            </ul>
+        </aside>
+
+        <section class="main-section main-body">
+            <!--Main page content-->
+
+            {{outlet}}
+
+            <p class="panel">
+                <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+                <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+                <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+                <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+                <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+                <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+                <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+                <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+            </p>
+
+        </section>
+
+        <a class="exit-off-canvas"></a>
+
+    </div>
+</div>
+
+
