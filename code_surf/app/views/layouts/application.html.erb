@@ -35,9 +35,10 @@
 
       <!-- Left Nav Section -->
       <ul class="left">
+        <li></li>
         <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="/"><i class="fa fa-home"></i> Tutorial</a></li>
-        <li><a href="/"><i class="fa fa-question-circle"></i> Problems</a></li>
+        <li><%= link_to('<i class="fa fa-question-circle"></i> Problems'.html_safe, problems_path) %></li>
         <li><a href="/"><i class="fa fa-cloud-upload"></i> Your Submissions</a></li>
         <li><a href="/"><i class="fa fa-stethoscope"></i> Help</a></li>
         <li><a href="/">Admin</a></li>
